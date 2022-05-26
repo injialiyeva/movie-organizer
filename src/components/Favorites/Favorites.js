@@ -76,14 +76,14 @@ class Favorites extends Component {
                 />
                 <ul className="favorites__list">
                     {this.state.favorits.map((item) => {
-                        return <li key={item.id}><button onClick={() => this.deleteBut(item.id)}>X</button>  {item.title} ({item.year})</li>;
+                        return <li className="favorites__list-item" key={item.id}>{item.title} ({item.year})<button onClick={() => this.deleteBut(item.id)}>X</button></li>;
                     })}
 
                 </ul>
                 <button type="button" className={this.state.showLink ? 'favorites__save' : 'favorites__save-none'}
                     onClick={() => this.saveFavList()} disabled={!this.state.title}>Сохранить список</button>
                 <div className={this.state.showLink ? 'favorites-link' : ''}>
-                    <Link to={`/list/${this.state.listId}`}>Перейти к списку фильмов</Link>
+                    <Link to={`/list/${this.state.listId}`} target="_blank">Перейти к списку</Link>
                 </div>
             </div>
 
