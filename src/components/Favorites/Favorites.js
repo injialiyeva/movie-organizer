@@ -79,7 +79,12 @@ class Favorites extends Component {
             return (
               <li className="favorites__list-item" key={item.id}>
                 {item.title} ({item.year})
-                <button onClick={() => this.deleteBut(item.id)}>X</button>
+                <button
+                  className="delete-button"
+                  onClick={() => this.deleteBut(item.id)}
+                >
+                  X
+                </button>
               </li>
             );
           })}
