@@ -1,5 +1,3 @@
-# Module 4 project – Movie organizer.
+# Movie Organizer
 
-Starter for Module 4 project in Algoritmika Coding Bootcamp
 
-### Используемые языки: JavaScript,CSS,HTML,React
