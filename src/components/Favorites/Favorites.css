@@ -63,3 +63,9 @@
     border-radius: 5px;
 }
 
+.favorites__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
